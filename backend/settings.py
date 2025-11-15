@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'breakfast_booking_db',
-        'USER':'root',
-        'PASSWORD':'Ramu@0211',
-        'HOST':'localhost',
-        'PORT':'3306'
+        'NAME': env("Database_name"),
+        'USER':env("User"),
+        'PASSWORD':env("Password"),
+        'HOST':env("Host"),
+        'PORT':env("Port"),
     }
 }
 
