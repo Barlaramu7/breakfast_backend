@@ -32,7 +32,11 @@ SECRET_KEY = 'django-insecure-hjb$3^g2=gn@3p(7y3fbu+ken4s&5(drqs8ujb!)6g*^-xskc+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'breakfast-backend-lpm3.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
