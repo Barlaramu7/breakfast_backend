@@ -91,9 +91,6 @@ DATABASES = {
         'PASSWORD':env("Password"),
         'HOST':env("Host"),
         'PORT':env("Port"),
-        'OPTIONS': {
-            'ssl': {'ssl-mode': 'REQUIRED'}
-        }
     }
 }
 
