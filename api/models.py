@@ -21,7 +21,7 @@ class Booking(models.Model):
     img = models.URLField(blank=True, null=True)
     total_price = models.IntegerField(blank=True, null=True)  # new column
 
-    # // 🧮 Auto-calculate total price
+    #  Auto-calculate total price
     def save(self, *args, **kwargs):
         if self.price and self.guests:
             self.total_price = self.price * self.guests
